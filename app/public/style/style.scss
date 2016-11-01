@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Ubuntu');
+@import "variables.scss";
+
+body {
+  background-image: url('./images/white_wall/white_wall.png');
+  font-family: $lato;
+}
+
+.heading {
+  font-family: $ubuntu;
+}

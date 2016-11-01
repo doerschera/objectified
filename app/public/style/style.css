@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Ubuntu");
+body {
+  background-image: url("./images/white_wall/white_wall.png");
+  font-family: "Lato", Helvetica, sans-serif; }
+
+.heading {
+  font-family: "Ubuntu", Helvetica, sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
