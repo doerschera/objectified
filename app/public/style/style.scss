@@ -1,11 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Roboto:900|Source+Code+Pro:300,400');
 @import "variables.scss";
 
 body {
-  background-image: url('./images/white_wall/white_wall.png');
-  font-family: $lato;
+  font-family: $source-code;
+  background-color:white;
+  color: black;
+}
+
+.main {
+  margin: 12.5vh auto;
+  height: 75vh;
+  width: 75%;
+  text-align: center;
+  // background-color: #F2F2F2;
+  border: solid 5px black;
+  h1 {
+    font-size: 9rem;
+    font-weight: 900;
+  }
 }
 
 .heading {
-  font-family: $ubuntu;
+  font-family: $roboto;
+}
+
+.valign {
+  margin: auto;
+}
+
+.button {
+  padding: 2.5px 5px;
+  border: solid 1px black;
+  display: inline-block;
+  height: 54px;
+  width: 64px;
+  line-height: 47px;
+  &:hover {
+    background-color: black;
+    cursor: pointer;
+    // color: white;
+  }
 }
