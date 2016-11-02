@@ -1,34 +1,74 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:900|Source+Code+Pro:300,400");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400");
 body {
   font-family: "Source Code Pro", courier, monospace;
-  background-color: white;
-  color: black; }
+  font-weight: 300;
+  background-color: #e7d61a;
+  color: white; }
+
+.relative {
+  position: relative; }
+
+.inline {
+  display: inline-block; }
+
+.h-line {
+  position: absolute;
+  border-bottom: solid 1.5px #e3a19a; }
+
+.v-line {
+  position: absolute;
+  border-left: solid 1.5px #e3a19a; }
 
 .main {
+  position: relative;
   margin: 12.5vh auto;
-  height: 75vh;
-  width: 75%;
-  text-align: center;
-  border: solid 5px black; }
-  .main h1 {
-    font-size: 9rem;
-    font-weight: 900; }
+  height: 350px;
+  width: 450px;
+  text-align: left;
+  border: solid 5px #e3a19a;
+  border-radius: 15px;
+  padding: 50px; }
 
-.heading {
-  font-family: "Roboto", Helvetica, sans-serif; }
-
-.valign {
-  margin: auto; }
+p {
+  font-size: 14px;
+  margin: 5px; }
 
 .button {
-  padding: 2.5px 5px;
-  border: solid 1px black;
+  position: absolute;
+  bottom: 50px;
+  padding: 5px;
+  border: solid 1px white;
   display: inline-block;
-  height: 54px;
-  width: 64px;
-  line-height: 47px; }
+  font-size: 14px; }
   .button:hover {
-    background-color: black;
-    cursor: pointer; }
+    cursor: pointer;
+    color: white;
+    border-color: #e3a19a;
+    background-color: #e3a19a; }
+
+#landing-1 {
+  position: relative;
+  width: 170%;
+  left: 100%;
+  bottom: 12px; }
+
+#landing-2 {
+  height: 200px;
+  left: 100%; }
+
+#landing-3 {
+  width: 700px;
+  right: 0;
+  top: 200px; }
+
+#landing-4 {
+  height: 102px;
+  right: 605px;
+  bottom: 63px; }
+
+#landing-5 {
+  right: 500px;
+  bottom: 62px;
+  width: 106px; }
 
 /*# sourceMappingURL=style.css.map */
