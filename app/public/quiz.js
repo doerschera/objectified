@@ -38,12 +38,25 @@ $(document).ready(function() {
     $('#rightDescription').html(quiz[number].right);
     $('#leftDescription').html(quiz[number].left);
     $('#questionNumber').html((number+1) +' / 5');
+    if(number == 4) {
+      $('#next').html('Done');
+    }
   }
 
   getQuestion();
 
   $('#next').on('click', function() {
     number++;
-    getQuestion();
+    if(selection != 0) {
+      getQuestion();
+    }
   })
+
+  $('.radio').on('click', function() {
+    $('.inner').show();
+    selection = $(this).attr('data-rating');
+    userInput[number] = selection;
+    $(this).children('.inner').hide();
+  })
+
 })
