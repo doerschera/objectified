@@ -29,9 +29,10 @@ var quiz = [
 
 $(document).ready(function() {
 
-  var userInput = [];
+  var userInput = {selections: []};
   var number = 0;
   var selection = 0;
+  var currentUrl = window.location.origin;
 
   function getQuestion() {
     $('#question').html(quiz[number].question);
@@ -39,7 +40,7 @@ $(document).ready(function() {
     $('#leftDescription').html(quiz[number].left);
     $('#questionNumber').html((number+1) +' / 5');
     if(number == 4) {
-      $('#next').html('Done');
+      $('#buttonTitle').html('Done');
     }
   }
 
@@ -47,6 +48,13 @@ $(document).ready(function() {
 
   $('#next').on('click', function() {
     number++;
+    $('.inner').show();
+    if(number == 5) {
+      $.post(currentUrl+'/api/new', userInput,
+      function(data) {
+        console.log(data);
+      })
+    }
     if(selection != 0) {
       getQuestion();
     }
@@ -55,8 +63,9 @@ $(document).ready(function() {
   $('.radio').on('click', function() {
     $('.inner').show();
     selection = $(this).attr('data-rating');
-    userInput[number] = selection;
+    userInput.selections[number] = selection;
     $(this).children('.inner').hide();
+    console.log(userInput);
   })
 
 })
