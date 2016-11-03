@@ -26,9 +26,33 @@ body {
   border-left: solid 1.5px $pink;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active {
+    color: white;
+  }
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin-top: 10px;
+  p:nth-child(2) {
+    float:right;
+    text-align: right;
+    padding-right: 10px;
+  }
+}
+
 .main {
   position: relative;
-  margin: 12.5vh auto;
+  margin: 125px auto;
   height: 350px;
   width: 450px;
   text-align: left;
@@ -54,6 +78,7 @@ p {
     color: white;
     border-color: $pink;
     background-color: $pink;
+    text-decoration: none;
   }
 }
 
@@ -86,6 +111,26 @@ p {
 
 .radio:hover, .inner:hover {
   cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-right: 10px;
+  box-sizing: border-box;
+  ul {
+    float: right;
+    a {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+  li:nth-child(odd) {
+    border-right: solid 1px white;
+    padding: 0 10px;
+  }
 }
 
 // landing lines
