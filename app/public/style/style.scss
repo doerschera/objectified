@@ -26,9 +26,33 @@ body {
   border-left: solid 1.5px $pink;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active {
+    color: white;
+  }
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin-top: 10px;
+  p:nth-child(2) {
+    float:right;
+    text-align: right;
+    padding-right: 10px;
+  }
+}
+
 .main {
   position: relative;
-  margin: 12.5vh auto;
+  margin: 125px auto;
   height: 350px;
   width: 450px;
   text-align: left;
@@ -54,6 +78,58 @@ p {
     color: white;
     border-color: $pink;
     background-color: $pink;
+    text-decoration: none;
+  }
+}
+
+.rating {
+  position: absolute;
+  top: 225px;
+}
+
+.radio {
+  background-color: $pink;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  display: inline-block;
+  &:nth-child(even) {
+    margin: 0 77.5px;
+  }
+  .inner {
+    border-radius: 100%;
+    border: solid 2px white;
+    background-color: transparent;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+  }
+}
+
+.radio:hover, .inner:hover {
+  cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-right: 10px;
+  box-sizing: border-box;
+  ul {
+    float: right;
+    a {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+  li:nth-child(odd) {
+    border-right: solid 1px white;
+    padding: 0 10px;
   }
 }
 
@@ -86,4 +162,61 @@ p {
   right: 500px;
   bottom: 62px;
   width: 106px;
+}
+
+//quiz lines
+
+#mainLine {
+  left: -85px;
+  top: 235px;
+  width: 720px;
+}
+
+#leftDescription, #rightDescription {
+  width: 125px;
+  position: relative;
+}
+
+#leftDescription {
+  right: 55px;
+}
+
+#rightDescription {
+  left: 55px;
+  text-align: right;
+}
+
+.optionLine {
+  height: 30px;
+  position: relative;
+}
+
+#rightLine {
+  left: 134px;
+}
+
+#leftOption {
+  position: absolute;
+  bottom: 215px;
+  left: -85px;
+}
+
+#rightOption {
+  position: absolute;
+  bottom: 215px;
+  right: -85px;
+}
+
+#buttonLine {
+  height: 80px;
+  top: 30px;
+  right: 20px;
+}
+
+#questionNumber {
+  position: absolute;
+  top: 110px;
+  left: -5px;
+  width: 50px;
+  text-align: center;
 }

@@ -19,9 +19,28 @@ body {
   position: absolute;
   border-left: solid 1.5px #e3a19a; }
 
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px; }
+  a:hover {
+    text-decoration: underline; }
+  a:active {
+    color: white; }
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin-top: 10px; }
+  .header p:nth-child(2) {
+    float: right;
+    text-align: right;
+    padding-right: 10px; }
+
 .main {
   position: relative;
-  margin: 12.5vh auto;
+  margin: 125px auto;
   height: 350px;
   width: 450px;
   text-align: left;
@@ -44,7 +63,50 @@ p {
     cursor: pointer;
     color: white;
     border-color: #e3a19a;
-    background-color: #e3a19a; }
+    background-color: #e3a19a;
+    text-decoration: none; }
+
+.rating {
+  position: absolute;
+  top: 225px; }
+
+.radio {
+  background-color: #e3a19a;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  display: inline-block; }
+  .radio:nth-child(even) {
+    margin: 0 77.5px; }
+  .radio .inner {
+    border-radius: 100%;
+    border: solid 2px white;
+    background-color: transparent;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    left: 4px;
+    bottom: 4px; }
+
+.radio:hover, .inner:hover {
+  cursor: pointer; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-right: 10px;
+  box-sizing: border-box; }
+  .footer ul {
+    float: right; }
+    .footer ul a {
+      font-size: 12px;
+      line-height: 20px; }
+  .footer li:nth-child(odd) {
+    border-right: solid 1px white;
+    padding: 0 10px; }
 
 #landing-1 {
   position: relative;
@@ -53,7 +115,7 @@ p {
   bottom: 12px; }
 
 #landing-2 {
-  height: 200px;
+  height: 201px;
   left: 100%; }
 
 #landing-3 {
@@ -70,5 +132,50 @@ p {
   right: 500px;
   bottom: 62px;
   width: 106px; }
+
+#mainLine {
+  left: -85px;
+  top: 235px;
+  width: 720px; }
+
+#leftDescription, #rightDescription {
+  width: 125px;
+  position: relative; }
+
+#leftDescription {
+  right: 55px; }
+
+#rightDescription {
+  left: 55px;
+  text-align: right; }
+
+.optionLine {
+  height: 30px;
+  position: relative; }
+
+#rightLine {
+  left: 134px; }
+
+#leftOption {
+  position: absolute;
+  bottom: 215px;
+  left: -85px; }
+
+#rightOption {
+  position: absolute;
+  bottom: 215px;
+  right: -85px; }
+
+#buttonLine {
+  height: 80px;
+  top: 30px;
+  right: 20px; }
+
+#questionNumber {
+  position: absolute;
+  top: 110px;
+  left: -5px;
+  width: 50px;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
