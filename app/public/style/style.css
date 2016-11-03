@@ -46,6 +46,32 @@ p {
     border-color: #e3a19a;
     background-color: #e3a19a; }
 
+.rating {
+  position: absolute;
+  top: 225px; }
+
+.radio {
+  background-color: #e3a19a;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  display: inline-block; }
+  .radio:nth-child(even) {
+    margin: 0 77.5px; }
+  .radio .inner {
+    border-radius: 100%;
+    border: solid 2px white;
+    background-color: transparent;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    left: 4px;
+    bottom: 4px; }
+
+.radio:hover, .inner:hover {
+  cursor: pointer; }
+
 #landing-1 {
   position: relative;
   width: 170%;
@@ -53,7 +79,7 @@ p {
   bottom: 12px; }
 
 #landing-2 {
-  height: 200px;
+  height: 201px;
   left: 100%; }
 
 #landing-3 {
@@ -70,5 +96,38 @@ p {
   right: 500px;
   bottom: 62px;
   width: 106px; }
+
+#mainLine {
+  left: -85px;
+  top: 235px;
+  width: 720px; }
+
+#leftDescription, #rightDescription {
+  width: 125px;
+  position: relative; }
+
+#leftDescription {
+  right: 55px; }
+
+#rightDescription {
+  left: 55px;
+  text-align: right; }
+
+.optionLine {
+  height: 30px;
+  position: relative; }
+
+#rightLine {
+  left: 134px; }
+
+#leftOption {
+  position: absolute;
+  bottom: 215px;
+  left: -85px; }
+
+#rightOption {
+  position: absolute;
+  bottom: 215px;
+  right: -85px; }
 
 /*# sourceMappingURL=style.css.map */
