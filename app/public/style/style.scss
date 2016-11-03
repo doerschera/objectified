@@ -138,31 +138,35 @@ p {
 }
 
 // landing lines
-#landing-1 {
+#landing-1, #error-1 {
   position: relative;
   width: 170%;
   left: 100%;
   bottom: 12px;
 }
 
-#landing-2 {
+#error-1 {
+  width: 248px;
+}
+
+#landing-2, #error-2 {
   height: 201px;
   left: 100%;
 }
 
-#landing-3 {
+#landing-3, #error-3 {
   width: 700px;
   right: 0;
   top: 200px;
 }
 
-#landing-4 {
+#landing-4, #error-4 {
   height: 98px;
   right: 605px;
   bottom: 63px;
 }
 
-#landing-5 {
+#landing-5, #error-5 {
   right: 500px;
   bottom: 62px;
   width: 106px;
