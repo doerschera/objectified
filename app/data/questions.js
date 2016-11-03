@@ -1,4 +1,3 @@
-
 var quiz = [
   {
     question: 'How are you feeling about your day so far?',
@@ -27,23 +26,4 @@ var quiz = [
   }
 ]
 
-$(document).ready(function() {
-
-  var userInput = [];
-  var number = 0;
-  var selection = 0;
-
-  function getQuestion() {
-    $('#question').html(quiz[number].question);
-    $('#rightDescription').html(quiz[number].right);
-    $('#leftDescription').html(quiz[number].left);
-    $('#questionNumber').html((number+1) +' / 5');
-  }
-
-  getQuestion();
-
-  $('#next').on('click', function() {
-    number++;
-    getQuestion();
-  })
-})
+module.exports = quiz;
