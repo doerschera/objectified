@@ -66,6 +66,9 @@ p {
     background-color: #e3a19a;
     text-decoration: none; }
 
+#buttonTitle {
+  margin: 0; }
+
 .rating {
   position: absolute;
   top: 225px; }
@@ -124,7 +127,7 @@ p {
   top: 200px; }
 
 #landing-4 {
-  height: 102px;
+  height: 98px;
   right: 605px;
   bottom: 63px; }
 
