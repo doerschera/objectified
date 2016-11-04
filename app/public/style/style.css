@@ -95,6 +95,25 @@ p {
 .radio:hover, .inner:hover {
   cursor: pointer; }
 
+h4 {
+  text-decoration: underline;
+  margin-left: 5px; }
+
+#description {
+  width: 200px;
+  float: left; }
+  #description p {
+    margin-bottom: 15px; }
+
+#image {
+  float: right; }
+  #image img {
+    width: 200px;
+    vertical-align: middle; }
+
+#toaster, #chair {
+  margin-top: 40px; }
+
 .footer {
   position: absolute;
   bottom: 0;

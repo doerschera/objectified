@@ -117,6 +117,31 @@ p {
   cursor: pointer;
 }
 
+h4 {
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+#description {
+  width: 200px;
+  float: left;
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+#image {
+  float: right;
+  img {
+    width: 200px;
+    vertical-align: middle;
+  }
+}
+
+#toaster, #chair {
+  margin-top: 40px;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
