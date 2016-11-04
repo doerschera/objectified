@@ -33,9 +33,9 @@ module.exports = function(app) {
       itemCount++;
     })
 
-    console.log(objects[objectIndex].name);
-
-
+    var userObject = objects[objectIndex]
+    stats[userObject.name] ++;
+    console.log(stats);
 
     res.json(objects[objectIndex]);
   })
