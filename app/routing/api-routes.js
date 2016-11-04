@@ -1,8 +1,13 @@
-var objects = require('../data/object.js')
+var objects = require('../data/object.js');
+var stats = require('../data/stats.js');
 
 module.exports = function(app) {
   app.get('/api/objects', function(req, res) {
     res.json(objects);
+  })
+
+  app.get('/api/stats', function(req, res) {
+    res.json(stats);
   })
 
   app.post('/api/new', function(req, res) {
