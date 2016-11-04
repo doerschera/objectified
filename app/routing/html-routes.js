@@ -10,8 +10,8 @@ module.exports = function(app) {
 		res.sendFile(path.join(__dirname + '/../public/quiz.html'));
 	});
 
-  app.get('/results',function (req, res) {
-		res.sendFile(path.join(__dirname + '/../public/results.html'));
+  app.get('/stats',function (req, res) {
+		res.sendFile(path.join(__dirname + '/../public/stats.html'));
 	});
 
   app.use(function (req, res) {
