@@ -53,6 +53,7 @@ $(document).ready(function() {
       $.post(currentUrl+'/api/new', userInput,
       function(data) {
         console.log(data);
+        window.location = currentUrl+'/results';
       })
     }
     if(selection != 0) {

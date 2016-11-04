@@ -10,6 +10,10 @@ module.exports = function(app) {
 		res.sendFile(path.join(__dirname + '/../public/quiz.html'));
 	});
 
+  app.get('/results',function (req, res) {
+		res.sendFile(path.join(__dirname + '/../public/results.html'));
+	});
+
   app.use(function (req, res) {
 		res.sendFile(path.join(__dirname + '/../public/404.html'));
 	});
