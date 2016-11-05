@@ -59,6 +59,10 @@ $(document).ready(function() {
             fontColor: '#ffffff',
             fontFamily: "'Source Code Pro'"
           }
+        },
+        tooltips: {
+          backgroundColor: 'rgb(231, 214, 26)',
+          bodyFontFamily: "'Source Code Pro'",
         }
       }
     })
